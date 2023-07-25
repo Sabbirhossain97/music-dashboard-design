@@ -21,9 +21,9 @@ export default function Header() {
             8 people listening you
           </p>
         </div>
-        <div className="w-1/2 flex justify-end mr-24 items-center space-x-4">
-          <div className="flex items-center space-x-3 mr-10">
-            <div className="flex flex-col items-start">
+        <div className="w-1/2 flex justify-end mr-24 items-center space-x-4 ">
+          <div className=" flex items-center space-x-3  ">
+            <div className="flex flex-col items-start mt-2">
               <p className="text-right font-heebo text-[14px] not-italic font-medium leading-normal tracking-[0.14px] text-[#2E3B52]">
                 Carlos López
               </p>
@@ -37,7 +37,8 @@ export default function Header() {
             />
             <DropDown />
           </div>
-          <div className="flex space-x-4">
+          <div className="w-[1px] bg-[#EFF4F6] h-3/4"></div>
+          <div className="flex space-x-4 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

@@ -27,8 +27,8 @@ export default function Sidebar() {
   };
   return (
     <div>
-      <div className="h-screen bg-[#373B53] w-[100px]">
-        <div className="h-1/2 flex flex-col items-center space-y-20">
+      <div className="h-screen bg-[#373B53] w-[100px] fixed left-0">
+        <div className="h-1/2  flex flex-col items-center space-y-20">
           <div className="mt-6">
             <img src="assets/navbar/Logo.png" />
           </div>
@@ -37,7 +37,9 @@ export default function Sidebar() {
               <div
                 onClick={() => handleNavigation(key)}
                 key={key}
-                className={`cursor-pointer ${key === activeNav?.id ? "bg-white": ""} hover:bg-white rounded-l-lg w-5/6 py-4 flex justify-center`}
+                className={`cursor-pointer ${
+                  key === activeNav?.id ? "bg-white" : ""
+                } hover:bg-white rounded-l-lg w-5/6 py-4 flex justify-center`}
               >
                 <Link to={item.path}>
                   <div>{item.icon}</div>
@@ -46,7 +48,8 @@ export default function Sidebar() {
             ))}
           </div>
         </div>
-        <div className="h-1/2 flex flex-col justify-end items-center ">
+        <div className="h-2/5 border-[#494E67] border-b w-full"></div>
+        <div className="h-[100px]  flex flex-col justify-end items-center ">
           <p className="mb-[10px] font-heebo text-[18px] text-[#6F809E] not-italic font-normal leading-3 tracking-[0.18px]">
             Help
           </p>
