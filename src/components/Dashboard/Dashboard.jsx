@@ -1,16 +1,19 @@
 import React from "react";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
-import Gear from "./svg/dashboard/Gear";
-import DownArrow from "./svg/dashboard/DownArrow";
-import Download from "./svg/dashboard/Download";
-import Add from "./svg/dashboard/Add";
-import Person from "./svg/dashboard/Person";
-import UnderPerform from "./svg/dashboard/UnderPerform";
-import Mark from "./svg/dashboard/Mark";
-import Clock from "./svg/dashboard/Clock";
-import Love from "./svg/dashboard/Love";
-import Music from "./svg/dashboard/Music";
+import Sidebar from "../Sidebar";
+import Header from "../Header";
+import Gear from "../svg/dashboard/Gear";
+import DownArrow from "../svg/dashboard/DownArrow";
+import Download from "../svg/dashboard/Download";
+import Add from "../svg/dashboard/Add";
+import Person from "../svg/dashboard/Person";
+import UnderPerform from "../svg/dashboard/UnderPerform";
+import Mark from "../svg/dashboard/Mark";
+import Clock from "../svg/dashboard/Clock";
+import Love from "../svg/dashboard/Love";
+import Music from "../svg/dashboard/Music";
+import Chart from "./Chart";
+import Fans from "./Fans";
+import PieChart from "./PieChart";
 export default function Dashboard() {
   return (
     <div className="flex">
@@ -57,7 +60,7 @@ export default function Dashboard() {
           <div className="grid grid-cols-4 grid-rows-5 gap-x-10 gap-y-10 w-11/12 mx-auto ">
             <div className="bg-white rounded-lg shadow-dashboard-items">
               <div className="p-10 flex">
-                <div className=" p-6 rounded-full bg-[#F8F5FD]">
+                <div className="p-6 rounded-full bg-[#F8F5FD]">
                   <Person />
                 </div>
                 <div className=" flex flex-col justify-center ml-8">
@@ -72,7 +75,7 @@ export default function Dashboard() {
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items">
               <div className="p-10 flex">
-                <div className=" p-6 rounded-full bg-[#F1FCF8]">
+                <div className="p-6 rounded-full bg-[#F1FCF8]">
                   <Mark />
                 </div>
                 <div className=" flex flex-col justify-center ml-8">
@@ -145,51 +148,10 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-dashboard-items row-span-3">
-              <div className="p-10 flex">
-                <div className=" p-6 rounded-full bg-[#F2FAFF]">
-                  <Clock />
-                </div>
-                <div className=" flex flex-col justify-center ml-8">
-                  <p className="text-[28px] not-italic font-heebo text-[#2E3B52] font-bold leading-6 tracking-[0.28px]">
-                    1396
-                  </p>
-                  <p className="mt-2 font-heebo text-[14px] text-[#A6ACBE] not-italic font-medium leading-normal tracking-[0.14px]">
-                    Streams total hours
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-dashboard-items row-span-3">
-              <div className="p-10 flex">
-                <div className=" p-6 rounded-full bg-[#F2FAFF]">
-                  <Clock />
-                </div>
-                <div className=" flex flex-col justify-center ml-8">
-                  <p className="text-[28px] not-italic font-heebo text-[#2E3B52] font-bold leading-6 tracking-[0.28px]">
-                    1396
-                  </p>
-                  <p className="mt-2 font-heebo text-[14px] text-[#A6ACBE] not-italic font-medium leading-normal tracking-[0.14px]">
-                    Streams total hours
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-dashboard-items col-span-2 row-span-2">
-              <div className="p-10 flex">
-                <div className=" p-6 rounded-full bg-[#F2FAFF]">
-                  <Clock />
-                </div>
-                <div className=" flex flex-col justify-center ml-8">
-                  <p className="text-[28px] not-italic font-heebo text-[#2E3B52] font-bold leading-6 tracking-[0.28px]">
-                    1396
-                  </p>
-                  <p className="mt-2 font-heebo text-[14px] text-[#A6ACBE] not-italic font-medium leading-normal tracking-[0.14px]">
-                    Streams total hours
-                  </p>
-                </div>
-              </div>
-            </div>
+            <Fans />
+            <PieChart/>
+            {/* areachart */}
+            <Chart />
           </div>
         </div>
       </div>
