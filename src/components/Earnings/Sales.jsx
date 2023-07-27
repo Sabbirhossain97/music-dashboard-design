@@ -13,102 +13,97 @@ export default function Chart() {
   const data = [
     {
       name: "Jan",
-      men: 11,
-      women: 16,
+      women: 0,
+      men: 0,
     },
     {
       name: "Feb",
-      men: 15,
-      women: 7,
+      women: 16000,
+      men: 7000,
     },
     {
       name: "Mar",
-      men: 23,
-      women: 15,
+      women: 8000,
+      men: 6000,
     },
     {
       name: "Apr",
-      men: 8,
-      women: 10,
+      women: 7000,
+      men: 6500,
     },
     {
       name: "May",
-      men: 11,
-      women: 12,
+      women: 11000,
+      men: 13500,
     },
     {
       name: "Jun",
-      men: 10,
-      women: 5,
+      women: 10000,
+      men: 7000,
     },
     {
       name: "Jul",
-      men: 17,
-      women: 14,
+      women: 7000,
+      men: 24345,
+    },
+    {
+      name: "Aug",
+      women: 13000,
+      men: 9000,
     },
     {
       name: "Sep",
-      men: 12,
-      women: 22,
+      women: 5000,
+      men: 17000,
     },
     {
       name: "Oct",
-      men: 10,
-      women: 15,
+      women: 9000,
+      men: 8000,
     },
     {
       name: "Nov",
-      men: 17,
-      women: 7,
+      women: 21500,
+      men: 15000,
     },
     {
       name: "Dec",
-      men: 22,
-      women: 12,
+      women: 0,
+      men: 0,
     },
   ];
   return (
     <div className="bg-white rounded-lg shadow-dashboard-items col-span-2 row-span-2">
-      <div className=" flex justify-between py-8 w-11/12 mx-auto">
-        <p className="font-heebo text-[#2E3B52] text-[14px] not-italic font-bold leading-6 tracking-[0.14px]">
-          New listeners by month
+      <div className=" flex justify-between py-10 w-11/12 mx-auto">
+        <p className="font-heebo text-[#282D32] text-[20px] not-italic font-bold leading-5 tracking-[0.14px]">
+          Sales
         </p>
         <div className="flex ">
-          <div className="flex items-center px-12">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="8"
-              height="8"
-              viewBox="0 0 8 8"
-              fill="none"
-            >
-              <circle cx="4" cy="4" r="4" fill="#96A6FF" />
-            </svg>
-            <span className="ml-2 text-[#A6ACBE] font-heebo text-[14px] not-italic font-medium leading-normal tracking-[0.14px]">
-              Men
+          <p className="text-right flex items-center font-heebo not-italic text-[12px] font-medium leading-3 text-[#AAACAE]">
+            Last Month{" "}
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                className="ml-2"
+              >
+                <path
+                  d="M11.8285 3.39804L6.93501 8.50914L2.04149 3.39804C1.65562 2.9536 1.26975 2.94434 0.883885 3.37026C0.498015 3.79619 0.498015 4.21285 0.883885 4.62026L6.35621 10.398C6.49653 10.5832 6.68946 10.6758 6.93501 10.6758C7.18057 10.6758 7.3735 10.5832 7.51382 10.398L12.9861 4.62026C13.372 4.21285 13.372 3.79619 12.9861 3.37026C12.6003 2.94434 12.2144 2.9536 11.8285 3.39804Z"
+                  fill="#2B3034"
+                  fill-opacity="0.4"
+                />
+              </svg>
             </span>
-          </div>
-          <div className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="8"
-              height="8"
-              viewBox="0 0 8 8"
-              fill="none"
-            >
-              <circle cx="4" cy="4" r="4" fill="#E8B56B" />
-            </svg>
-            <span className="ml-2 text-[#A6ACBE] font-heebo text-[14px] not-italic font-medium leading-normal tracking-[0.14px]">
-              Women
-            </span>
-          </div>
+          </p>
         </div>
       </div>
-      <hr className="border-[#EEF0F6]" />
       <div className="p-9 flex">
         <ResponsiveContainer width={"100%"} height={300}>
           <AreaChart
-            width={730}
+            width={890}
             height={250}
             data={data}
             margin={{
@@ -120,12 +115,13 @@ export default function Chart() {
           >
             <defs>
               <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#96A6FF" stopOpacity={0.8} />
-                <stop offset="95%" stopColor="#C4C4C4" stopOpacity={0} />
+                <stop offset="0%" stopColor="#F3E6FA" stopOpacity={1} />
+                <stop offset="100%" stopColor="#C887EB" stopOpacity={1} />
               </linearGradient>
+
               <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#E8B56B" stopOpacity={0.8} />
-                <stop offset="100%" stopColor="#E8B56B" stopOpacity={0} />
+                <stop offset="5%" stopColor="#BBC6FF" stopOpacity={0.8} />{" "}
+                <stop offset="100%" stopColor="#5E77FF" stopOpacity={1} />
               </linearGradient>
             </defs>
             <XAxis
@@ -157,30 +153,31 @@ export default function Chart() {
                 opacity: 0.6,
               }}
               axisLine={false}
-              ticks={[5, 10, 15, 20, 25]}
-              domain={[0, 25]}
+              ticks={[5000, 10000, 15000, 20000, 25000]}
+              domain={[5000, 25000]}
               type="number"
-              tickCount={6}
               tickLine={false}
               dx={-25}
+              tickFormatter={(value) =>
+                new Intl.NumberFormat("en-US", {
+                  notation: "compact",
+                  compactDisplay: "short",
+                }).format(value)
+              }
             />
-            <CartesianGrid
-              strokeDasharray="8 8"
-              vertical={false}
-              horizontal={false}
-            />
+            <CartesianGrid strokeDasharray="8 8" vertical={false} />
             <Tooltip />
             <Area
               type="monotone"
-              dataKey="men"
-              stroke="#C5CDF7"
+              dataKey="women"
+              stroke="#F3E6FA"
               fillOpacity={1}
               fill="url(#colorUv)"
             />
             <Area
               type="monotone"
-              dataKey="women"
-              stroke="#F1D2A4"
+              dataKey="men"
+              stroke="#BBC6FF"
               fillOpacity={1}
               fill="url(#colorPv)"
             />
