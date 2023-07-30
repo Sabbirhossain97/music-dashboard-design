@@ -1,7 +1,7 @@
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
-import Chat from "./components/Chat";
+import Chat from "./components/Chat/Chat";
 import Earnings from "./components/Earnings/Earnings";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NoPage from "./components/NoPage";
