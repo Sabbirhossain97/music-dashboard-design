@@ -8,6 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { DropDown } from "../SvgComponents/SVG";
 
 export default function Chart() {
   const data = [
@@ -82,20 +83,7 @@ export default function Chart() {
           <p className="text-right flex items-center font-heebo not-italic text-[12px] font-medium leading-3 text-[#AAACAE]">
             Last Month{" "}
             <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                className="ml-2"
-              >
-                <path
-                  d="M11.8285 3.39804L6.93501 8.50914L2.04149 3.39804C1.65562 2.9536 1.26975 2.94434 0.883885 3.37026C0.498015 3.79619 0.498015 4.21285 0.883885 4.62026L6.35621 10.398C6.49653 10.5832 6.68946 10.6758 6.93501 10.6758C7.18057 10.6758 7.3735 10.5832 7.51382 10.398L12.9861 4.62026C13.372 4.21285 13.372 3.79619 12.9861 3.37026C12.6003 2.94434 12.2144 2.9536 11.8285 3.39804Z"
-                  fill="#2B3034"
-                  fill-opacity="0.4"
-                />
-              </svg>
+              <DropDown/>
             </span>
           </p>
         </div>

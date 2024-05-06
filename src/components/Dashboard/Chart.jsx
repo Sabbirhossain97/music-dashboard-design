@@ -68,7 +68,7 @@ export default function Chart() {
     },
   ];
   return (
-    <div className="bg-white rounded-lg shadow-dashboard-items col-span-2 row-span-2">
+    <div className="bg-white rounded-lg shadow-dashboard-items row-span-2 sm:col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-2 ">
       <div className=" flex justify-between py-8 w-11/12 mx-auto">
         <p className="font-heebo text-[#2E3B52] text-[14px] not-italic font-bold leading-6 tracking-[0.14px]">
           New listeners by month

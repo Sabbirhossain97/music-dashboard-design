@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Fans() {
   return (
-    <div className="bg-white rounded-lg shadow-dashboard-items row-span-3">
+    <div className="bg-white rounded-lg shadow-dashboard-items row-span-4 sm:col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-1">
       <div className="w-10/12 mx-auto">
         <div className="flex justify-between py-8">
           <p className="text-[#2E3B52] font-heebo text-[14px] not-italic font-bold leading-6 tracking-[0.14px]">
@@ -23,9 +23,9 @@ export default function Fans() {
               <path
                 d="M6 8L10 12L14 8"
                 stroke="#B0B9C7"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </p>
@@ -60,7 +60,7 @@ export default function Fans() {
           </div>
         ))}
       </div>
-      <div className="mt-10">
+      <div className="mt-10 pb-5">
         <p className="cursor-pointer hover:text-blue-500 text-[#A6ACBE] text-center font-heebo text-[11px] not-italic font-normal leading-normal tracking-[0.11px]">
           Show More
         </p>

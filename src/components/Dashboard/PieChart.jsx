@@ -8,7 +8,7 @@ export default function StreamByCountries() {
     { name: "United Kingdom", value: 20, fill: "#E8B56B" },
   ];
   return (
-    <div className="bg-white rounded-lg shadow-dashboard-items row-span-3">
+    <div className="bg-white rounded-lg shadow-dashboard-items row-span-2 col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-1 xl:row-span-4 ">
       <div>
         <div className="w-10/12 mx-auto py-8">
           <p className="text-[#2E3B52] font-heebo text-[14px] not-italic font-bold leading-6 tracking-[0.14px]">
@@ -16,7 +16,7 @@ export default function StreamByCountries() {
           </p>
         </div>
         <hr className="border-[#EEF0F6]" />
-        <div className="relative ">
+        <div className="relative flex justify-center items-center">
           <PieChart
             width={350}
             height={300}
@@ -36,10 +36,12 @@ export default function StreamByCountries() {
             />
             <Tooltip />
           </PieChart>
-          <img
-            src="assets/dashboard/circle.png"
-            className="absolute left-[145px] top-[105px]  shadow-xl rounded-full p-4"
-          />
+          <div className="absolute">
+            <img
+              src="assets/dashboard/circle.png"
+              className="shadow-xl rounded-full p-4"
+            />
+          </div>
         </div>
         <div className="space-y-6">
           {[
@@ -81,7 +83,7 @@ export default function StreamByCountries() {
             </div>
           ))}
         </div>
-        <div className="mt-10">
+        <div className="mt-10 pb-5">
           <p className="text-[#A6ACBE] text-[11px] text-center font-heebo not-italic font-normal leading-normal tracking-[0.11px]">
             Show more
           </p>
