@@ -340,6 +340,7 @@ export const Gear = () => {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
+            className="hover:text-white"
         >
             <g clipPath="url(#clip0_533_222)">
                 <path
@@ -534,7 +535,7 @@ export const SalesDropDown = () => {
             height="18"
             viewBox="0 0 21 24"
             fill="none"
-            className="mt-1"
+            // className="mt-1"
         >
             <path
                 d="M5.13037 9L10.2608 15L15.3912 9"
@@ -576,7 +577,7 @@ export const Emoji = () => {
             height="22"
             viewBox="0 0 22 22"
             fill="none"
-            className="cursor-pointer"
+            className="cursor-pointer transition duration-300 hover:opacity-75"
 
         >
             <path
@@ -591,7 +592,7 @@ export const Emoji = () => {
 
 export const Facebook = () => {
     return (
-        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="cursor-pointer transition duration-300 hover:opacity-75" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M21.0745 41.3722C32.3793 41.3722 41.5436 32.2079 41.5436 20.9031C41.5436 9.59839 32.3793 0.434082 21.0745 0.434082C9.76977 0.434082 0.605469 9.59839 0.605469 20.9031C0.605469 32.2079 9.76977 41.3722 21.0745 41.3722Z" fill="#3D5A96" />
             <path fillRule="evenodd" clipRule="evenodd" d="M22.1504 29.9095H18.1575V21.4037H16.1621V18.1259H18.1575V16.1596C18.1575 13.4876 19.2841 11.8967 22.485 11.8967H25.1495V15.1745H23.4847C22.2383 15.1745 22.1554 15.632 22.1554 16.487L22.1504 18.1259H25.1685L24.8149 21.4037H22.1504V29.9095Z" fill="white" />
         </svg>
@@ -600,7 +601,7 @@ export const Facebook = () => {
 
 export const Twitter = () => {
     return (
-        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="cursor-pointer transition duration-300 hover:opacity-75" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M20.5755 41.3722C31.8802 41.3722 41.0445 32.2079 41.0445 20.9031C41.0445 9.59839 31.8802 0.434082 20.5755 0.434082C9.27075 0.434082 0.106445 9.59839 0.106445 20.9031C0.106445 32.2079 9.27075 41.3722 20.5755 41.3722Z" fill="#2AA3EF" />
             <path fillRule="evenodd" clipRule="evenodd" d="M29.5816 15.2787C28.9193 15.5746 28.2061 15.7746 27.459 15.8651C28.222 15.404 28.808 14.6755 29.0836 13.807C28.3693 14.2333 27.5788 14.5429 26.7363 14.7092C26.0623 13.9859 25.1023 13.5343 24.0394 13.5343C21.9984 13.5343 20.3432 15.1998 20.3432 17.2548C20.3432 17.5475 20.3771 17.8307 20.4396 18.1033C17.3686 17.9486 14.6462 16.4663 12.8235 14.2154C12.5046 14.765 12.3234 15.404 12.3234 16.0862C12.3234 17.3769 12.9761 18.516 13.9669 19.1824C13.3608 19.1635 12.7907 18.9961 12.2937 18.7171C12.2937 18.7329 12.2937 18.7487 12.2937 18.7645C12.2937 20.5668 13.5664 22.0702 15.2577 22.4123C14.9472 22.4976 14.6218 22.5428 14.2838 22.5428C14.0464 22.5428 13.8143 22.5197 13.5886 22.4755C14.0591 23.9536 15.424 25.0295 17.0411 25.06C15.7759 26.057 14.1821 26.6518 12.4505 26.6518C12.1527 26.6518 11.8581 26.635 11.5688 26.6002C13.204 27.6561 15.1464 28.272 17.234 28.272C24.0309 28.272 27.7483 22.6029 27.7483 17.6864C27.7483 17.5243 27.7441 17.3653 27.7377 17.2053C28.4594 16.681 29.0867 16.0252 29.5816 15.2798V15.2787Z" fill="white" />
         </svg>
@@ -609,7 +610,7 @@ export const Twitter = () => {
 
 export const Instagram = () => {
     return (
-        <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="cursor-pointer transition duration-300 hover:opacity-75" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M21.0765 41.3722C32.3812 41.3722 41.5455 32.2079 41.5455 20.9031C41.5455 9.59839 32.3812 0.434082 21.0765 0.434082C9.77173 0.434082 0.607422 9.59839 0.607422 20.9031C0.607422 32.2079 9.77173 41.3722 21.0765 41.3722Z" fill="url(#paint0_linear_636_212)" />
             <path fillRule="evenodd" clipRule="evenodd" d="M25.3787 10.2593H16.7744C13.2775 10.2593 10.4326 13.1042 10.4326 16.601V25.2053C10.4326 28.7022 13.2775 31.5471 16.7744 31.5471H25.3787C28.8755 31.5471 31.7204 28.7022 31.7204 25.2053V16.601C31.7204 13.1042 28.8755 10.2593 25.3787 10.2593ZM29.5788 25.2052C29.5788 27.5249 27.6983 29.4054 25.3786 29.4054H16.7743C14.4546 29.4054 12.5741 27.5249 12.5741 25.2052V16.6009C12.5741 14.2812 14.4546 12.4007 16.7743 12.4007H25.3786C27.6983 12.4007 29.5788 14.2812 29.5788 16.6009V25.2052ZM15.5702 20.903C15.5702 17.8672 18.0401 15.3973 21.076 15.3973C24.1119 15.3973 26.5818 17.8671 26.5818 20.903C26.5818 23.9389 24.1119 26.4088 21.076 26.4088C18.0401 26.4088 15.5702 23.9389 15.5702 20.903ZM21.0767 24.2673C19.2187 24.2673 17.7125 22.7611 17.7125 20.9031C17.7125 19.045 19.2187 17.5388 21.0767 17.5388C22.9347 17.5388 24.4409 19.045 24.4409 20.9031C24.4409 22.7611 22.9347 24.2673 21.0767 24.2673ZM27.9123 15.4386C27.9123 16.1673 27.3217 16.7579 26.593 16.7579C25.8644 16.7579 25.2737 16.1673 25.2737 15.4386C25.2737 14.71 25.8644 14.1193 26.593 14.1193C27.3217 14.1193 27.9123 14.71 27.9123 15.4386Z" fill="white" />
             <defs>
@@ -632,7 +633,7 @@ export const Link = () => {
             height="21"
             viewBox="0 0 22 21"
             fill="none"
-            className="cursor-pointer"
+            className="cursor-pointer transition duration-300 hover:opacity-75"
         >
             <path
                 opacity="0.3"
@@ -693,7 +694,7 @@ export const Options = () => {
 
 export const Send = () => {
     return (
-        <svg className="bg-[#0094B6] rounded-full w-10 h-10 p-2.5" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className="bg-[#0094B6] rounded-full w-10 h-10 p-2.5 cursor-pointer transition duration-300 hover:opacity-75" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M23.4932 0.68334C23.3893 0.593803 23.2414 0.57303 23.116 0.630139L0.467079 10.9668C0.345144 11.0225 0.266623 11.1419 0.265158 11.274C0.263692 11.406 0.33963 11.5272 0.460378 11.5854L6.87 14.6752C6.98753 14.7319 7.12768 14.719 7.23266 14.642L13.4646 10.0668L8.57226 15.0099C8.50246 15.0804 8.46687 15.177 8.47455 15.275L8.96166 21.5062C8.97247 21.6443 9.0667 21.7624 9.20064 21.8056C9.23644 21.8171 9.27323 21.8228 9.30959 21.8228C9.40933 21.8228 9.50635 21.7807 9.57384 21.7039L12.9759 17.8316L17.1814 19.8054C17.2727 19.8483 17.3784 19.8501 17.4712 19.8104C17.5639 19.7707 17.6346 19.6935 17.6649 19.5988L23.596 1.04375C23.6375 0.914175 23.5971 0.772877 23.4932 0.68334Z" fill="white" />
         </svg>
     )
@@ -800,7 +801,7 @@ export const Audio = () => {
             height="26"
             viewBox="0 0 17 26"
             fill="none"
-            className="cursor-pointer"
+            className="cursor-pointer transition duration-300 hover:opacity-75"
 
         >
             <path
@@ -866,29 +867,29 @@ export const Chart = () => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="#0094B6"
             className="mr-4"
         >
             <path
                 d="M2 12V21H6V12H2Z"
-                fill="#4A4E68"
-                stroke="#969CBA"
+                fill="#0094B6"
+                stroke="#0094B6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             />
             <path
                 d="M18 7V21H22V7H18Z"
-                fill="#4A4E68"
-                stroke="#969CBA"
+                fill="#0094B6"
+                stroke="#0094B6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             />
             <path
                 d="M10 3V21H14V3H10Z"
-                fill="#4A4E68"
-                stroke="#969CBA"
+                fill="#0094B6"
+                stroke="#0094B6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -904,13 +905,13 @@ export const Chat = () => {
             width="22"
             height="24"
             viewBox="0 0 22 24"
-            fill="none"
+            fill="#0094B6"
             className="mr-4"
         >
             <path
                 d="M19 1H3C1.9 1 1 1.9 1 3V21L5 17H19C20.1 17 21 16.1 21 15V3C21 1.9 20.1 1 19 1Z"
-                fill="#4A4E68"
-                stroke="#969CBA"
+                fill="#0094B6"
+                stroke="#0094B6"
                 strokeWidth="2"
             />
         </svg>
@@ -924,21 +925,21 @@ export const File = () => {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="#0094B6"
             className="mr-4"
         >
             <path
                 d="M13 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V9L13 2Z"
-                fill="#969CBA"
+                fill="#0094B6"
                 fillOpacity="0.2"
-                stroke="#969CBA"
+                stroke="#0094B6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
             />
             <path
                 d="M13 2V9H20"
-                stroke="#969CBA"
+                stroke="#0094B6"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -947,22 +948,39 @@ export const File = () => {
     )
 }
 
-export const Home = () => {
+export const CircleWhite = ()=> {
+    return (
+        <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="6" cy="5.5" r="5.5" fill="#F8F8FB" />
+        </svg>
+    )
+}
+
+export const CircleBlue = ()=> {
+    return (
+         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5.5" cy="5.5" r="5.5" fill="#0094B6" />
+        </svg>
+       
+    )
+}
+
+export const Home = ({ isActive }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 22 20"
-            fill="white"
-            className="mr-4"
+            fill={isActive ? "#FF0000" : "#000000"}
+            className="mr-4 text-red-500"
         >
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M21.8785 9.07895L10.9393 0L0 9.07895H2.51822V20H19.3603V9.07895H21.8785Z"
-                fill="#4A4E68"
-                stroke="#969CBA"
+                fill={isActive ? "#FF0000" : "#000000"} 
+                stroke={isActive ? "#FF0000" : "#000000"} 
             />
         </svg>
     )

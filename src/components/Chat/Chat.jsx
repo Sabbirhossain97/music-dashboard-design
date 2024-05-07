@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../Navigation/Sidebar";
 import Header from "../Navigation/Header";
 import Users from "./Users";
-import { DropDown, Add, Link, Emoji, Audio, Phone, Video, Options, Send, Dot, ChatPlayIcon, Facebook, Twitter, Instagram } from "../SvgComponents/SVG";
+import { SalesDropDown, Add, Link, Emoji, Audio, Phone, Video, Options, Send, Dot, ChatPlayIcon, Facebook, Twitter, Instagram } from "../SvgComponents/SVG";
 
 
 export default function Chat() {
@@ -20,11 +20,11 @@ export default function Chat() {
               />
             </div>
             <div className="w-11/12 mx-auto mt-9 flex items-center justify-between">
-              <p className="flex text-[#181C2F] font-lato text-[14px] not-italic font-bold leading-4 ">
+              <p className="flex  text-[#181C2F] font-lato text-[14px] not-italic font-bold leading-4 ">
                 <span className="opacity-50"> Sort By: &nbsp;&nbsp;&nbsp;</span>
-                <span className="flex items-center text-[#181C2F] text-[14px] font-heebo not-italic font-medium leading-4">
+                <span className="flex items-center gap-1 text-[#181C2F] text-[14px] font-heebo not-italic font-medium leading-4">
                   Latest First
-                  <DropDown />
+                  <SalesDropDown />
                 </span>
               </p>
               <p className="px-2 flex items-center text-[#181C2F] font-lato text-[14px] not-italic font-bold leading-4 opacity-50">
@@ -40,7 +40,7 @@ export default function Chat() {
           <div className="w-11/12 mx-auto xl:w-1/2">
             <div className="flex flex-row justify-between px-2 border-b border-[#EFECE8] py-6">
               <div className="flex w-full sm:w-1/2">
-                <img src="assets/chat/user3.png" />
+                <img src="assets/chat/user3.png" alt="user" />
                 <div className="ml-3 flex sm:flex-col justify-start items-center sm:items-start">
                   <p className="text-[#373B53] font-heebo text-[18px] not-italic font-bold leading-6">
                     Fred Williams
@@ -90,7 +90,7 @@ export default function Chat() {
                     <ChatPlayIcon />
                   </div>
                   <div className="w-4/5">
-                    <img src="assets/chat/Timeline.png" />
+                    <img src="assets/chat/Timeline.png" alt="timeline"/>
                   </div>
                   <div className="w-1/6">
                     <p className="font-heebo text-[#1A2028] text-[14px] not-italic font-normal leading-5">
@@ -137,7 +137,7 @@ export default function Chat() {
           <div className="bg-[#F8F8FB] w-full xl:w-1/4 ">
             <div className="flex justify-center items-center flex-col pt-20">
               <div>
-                <img src="assets/chat/userBig.png" />
+                <img src="assets/chat/userBig.png" alt="user" />
               </div>
               <div className=" space-y-6 py-10">
                 <p className="text-[#373B53] text-center font-heebo text-[20px] not-italic font-bold leading-5">

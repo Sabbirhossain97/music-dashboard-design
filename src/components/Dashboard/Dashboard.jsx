@@ -26,16 +26,16 @@ export default function Dashboard() {
               </p>
             </div>
             <div className=" flex items-center justify-start md:justify-end flex-wrap gap-4 w-full md:w-4/5">
-              <button className="flex px-3 py-3 border border-[#7D90B2] rounded-md">
+              <button className="flex hover:border-[#0094B6] duration-300 transition px-3 py-3 border border-[#7D90B2] rounded-md">
                 <Gear />
               </button>
-              <button className="flex border border-[#7D90B2] rounded-md px-3 py-3">
+              <button className="flex border border-[#7D90B2] hover:border-[#0094B6] duration-300 transition hover:text-white rounded-md px-3 py-3">
                 <span className="mt-0.5 text-[14px] whitespace-nowrap font-medium leading-normal tracking-[0.14px] font-heebo text-[#7D90B2]">
                   Last 7 days
                 </span>
                 <DownArrow />
               </button>
-              <button className="flex gap-2 border px-3 py-3 border-[#7D90B2] rounded-md">
+              <button className="flex gap-2 hover:border-[#0094B6] duration-300 transition border px-3 py-3 border-[#7D90B2] rounded-md">
                 <Download />
                 <span className="text-[14px] whitespace-nowrap text-center font-bold leading-normal tracking-[0.14px] font-heebo text-[#7D90B2]">
                   Download as CSV
@@ -51,7 +51,7 @@ export default function Dashboard() {
           </div>
           <div className="w-11/12 mx-auto grid gap-10 grid-rows-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex ">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className="p-6 rounded-full bg-[#F8F5FD]">
                   <Person />
                 </div>
@@ -66,7 +66,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className="p-6 rounded-full bg-[#F1FCF8]">
                   <Mark />
                 </div>
@@ -81,7 +81,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className=" p-6 rounded-full bg-[#FFF6F7]">
                   <UnderPerform />
                 </div>
@@ -96,7 +96,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className=" p-6 rounded-full bg-[#F2FAFF]">
                   <Music />
                 </div>
@@ -111,7 +111,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className=" p-6 rounded-full bg-[#FFFAED]">
                   <Love />
                 </div>
@@ -126,7 +126,7 @@ export default function Dashboard() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items row-span-1 col-span-1 md:row-span-2 md:col-span-1">
-              <div className="p-10 flex">
+              <div className="p-10 flex justify-center md:justify-start">
                 <div className=" p-6 rounded-full bg-[#F2FAFF]">
                   <Clock />
                 </div>

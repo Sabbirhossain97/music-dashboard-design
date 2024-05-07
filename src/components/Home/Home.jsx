@@ -1,6 +1,6 @@
 import Sidebar from "../Navigation/Sidebar";
 import Header from "../Navigation/Header";
-import { Search, Like, Save, Share, Group, Recorder, Play } from "../SvgComponents/SVG";
+import { Search, Like, Save, Share, Group, Recorder, Play, CircleBlue, CircleWhite } from "../SvgComponents/SVG";
 
 export default function Home() {
 
@@ -21,19 +21,26 @@ export default function Home() {
           </div>
           <div className="w-11/12 mx-auto grid grid-cols-1 2xl:grid-cols-2 mt-8 gap-9">
             {/* first section */}
-            <div class="relative ">
+            <div className="relative ">
               <p className=" font-heebo text-[24px] text-[#3F4B5E] not-italic font-bold leading-normal tracking-[0.24px]">
                 Trendings
               </p>
-              <img src="/assets/home/concert.png" alt="Your Image" className="w-full mt-2 h-auto" />
+              <img src="/assets/home/concert.png" alt="concert" className="w-full rounded-lg mt-2 h-[442px] object-cover" />
               <div className="absolute flex flex-col items-center sm:items-start top-1/2 left-1/2 sm:left-1/3 md:left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-center">
                 <h1 className="text-xl text-center sm:text-3xl text-white sm:text-left font-bold">
-                  <span className="text-sm font-normal">// TRENDING</span> <br /> Red Snapper: <br />Performance Review <br />
+                  <span className="text-sm font-normal">{`// TRENDING`}</span> <br /> Red Snapper: <br />Performance Review <br />
                   <span className="text-lg font-semibold">- Kamelia</span></h1>
                 <div className="w-full sm:w-1/2 flex gap-2">
                   <button className="border mt-4 w-4/6 px-2 py-1 bg-white hover:bg-gray-200 text-[#0094B6] rounded-md flex items-center justify-center">PLAY<Play /></button>
                   <button className="border mt-4 w-1/3 px-2 py-1 bg-white hover:bg-gray-200 rounded-md flex items-center justify-center"><Share /></button>
                 </div>
+              </div>
+              <div className="flex justify-center w-full absolute bottom-8 gap-[5px] ">
+                <CircleWhite/>
+                <CircleBlue />
+                <CircleWhite />
+                <CircleWhite />
+                <CircleWhite />
               </div>
             </div>
             {/* second section */}
@@ -42,16 +49,16 @@ export default function Home() {
                 Artist of the week
               </p>
               <div className="w-full flex gap-8 flex-col md:flex-row">
-                <img src="assets/home/Artist.png" className="hidden md:block pt-2 h-[450px]" />
+                <img src="assets/home/Artist.png" className="hidden md:block pt-2 h-[450px]" alt="artist" />
                 <div className="py-0 md:py-6 w-full ">
                   <p className="font-heebo text-[10px] text-[#2E3B52] not-italic font-semibold leading-4 ">
-                  // Album
+                    {`// Album`}
                   </p>
                   <p className=" mt-[17px] text-[#2E3B52] font-sans text-[36px] md:text-[50px] not-italic font-bold leading-5">
                     Always Authentic
                   </p>
                   <div className="flex items-center gap-2 mt-5 md:mt-0">
-                    <img src="assets/home/Artist.png" className="md:hidden h-10 w-10 rounded-full" />
+                    <img src="assets/home/Artist.png" className="md:hidden h-10 w-10 rounded-full" alt="artist" />
                     <p className="mt-0 md:mt-6 text-[#A6ACBE] font-sans-pro text-[18px] not-italic font-normal leading-5">
                       Monica Lee
                     </p>
@@ -300,40 +307,40 @@ export default function Home() {
                   </li>
                 </div>
               </div>
-              {/* cicles */}
+              {/* circles */}
               <div className="flex flex-wrap gap-4 pt-8 ">
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle1.png" className="rounded-full" />
+                  <img src="assets/home/circle1.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Will Moon
                   </p>
                 </div>
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle2.png" className="rounded-full" />
+                  <img src="assets/home/circle2.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Maesse
                   </p>
                 </div>
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle3.png" className="rounded-full" />
+                  <img src="assets/home/circle3.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Ioas
                   </p>
                 </div>
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle4.png" className="rounded-full" />
+                  <img src="assets/home/circle4.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Waslae
                   </p>
                 </div>
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle5.png" className="rounded-full" />
+                  <img src="assets/home/circle5.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Sasew
                   </p>
                 </div>
                 <div className="cursor-pointer hover:opacity-75 transition duration-300">
-                  <img src="assets/home/circle6.png" className="rounded-full" />
+                  <img src="assets/home/circle6.png" className="rounded-full" alt="circle" />
                   <p className="mt-2 text-[#0F1E36] font-heebo text-center text-[12px] not-italic font-semibold leading-4">
                     Tom Krugg
                   </p>

@@ -4,11 +4,11 @@ import { Offline, Online, ForwardIcon } from "../SvgComponents/SVG";
 export default function Users() {
   return (
     <div className="space-y-4 mt-4">
-      <div className=" w-11/12 mx-auto px-6 py-4 bg-white rounded-md shadow-users">
+      <div className=" w-11/12 mx-auto px-6 py-4 bg-white transition duration-300 hover:opacity-75 cursor-pointer rounded-md shadow-users">
         <div className="flex justify-between">
           <div className="flex">
             <div className=" relative">
-              <img src="assets/chat/user1.png" />
+              <img src="assets/chat/user1.png" alt="user" />
               <Online />
             </div>
             <div className="ml-4">
@@ -30,11 +30,11 @@ export default function Users() {
           </p>
         </div>
       </div>
-      <div className=" w-11/12 mx-auto px-6 py-4 bg-white rounded-md shadow-users">
+      <div className=" w-11/12 mx-auto px-6 py-4 bg-white transition duration-300 hover:opacity-75 cursor-pointer rounded-md shadow-users">
         <div className="flex justify-between">
           <div className="flex">
             <div className="relative">
-              <img src="assets/chat/user2.png" />
+              <img src="assets/chat/user2.png" alt="user" />
               <Offline />
             </div>
             <div className="ml-4">
@@ -60,7 +60,7 @@ export default function Users() {
         <div className="flex justify-between">
           <div className="flex">
             <div className="relative">
-              <img src="assets/chat/user3.png" />
+              <img src="assets/chat/user3.png" alt="user" />
               <Offline />
             </div>
             <div className="ml-4">
@@ -85,11 +85,11 @@ export default function Users() {
           </p>
         </div>
       </div>
-      <div className=" w-11/12 mx-auto px-6 py-4 bg-white rounded-md shadow-users">
+      <div className=" w-11/12 mx-auto px-6 py-4 bg-white transition duration-300 hover:opacity-75 cursor-pointer rounded-md shadow-users">
         <div className="flex justify-between">
           <div className="flex">
             <div className="relative">
-              <img src="assets/chat/user4.png" />
+              <img src="assets/chat/user4.png" alt="user" />
               <Online />
             </div>
             <div className="ml-4">
@@ -112,11 +112,11 @@ export default function Users() {
           </p>
         </div>
       </div>
-      <div className=" w-11/12 mx-auto px-6 py-4 bg-white rounded-md shadow-users">
+      <div className=" w-11/12 mx-auto px-6 py-4 bg-white transition duration-300 hover:opacity-75 cursor-pointer rounded-md shadow-users">
         <div className="flex justify-between">
           <div className="flex">
             <div className="relative">
-              <img src="assets/chat/user5.png" />
+              <img src="assets/chat/user5.png" alt="user" />
               <Online />
             </div>
             <div className="ml-4">

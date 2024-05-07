@@ -24,16 +24,16 @@ export default function Earnings() {
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
-              <button className="flex px-3 py-3 border border-[#7D90B2] rounded-md">
+              <button className="flex px-3 py-3 border border-[#7D90B2] hover:border-[#0094B6] transition duration-300 rounded-md">
                 <Gear />
               </button>
-              <button className="flex border border-[#7D90B2] rounded-md px-3 py-3">
+              <button className="flex border border-[#7D90B2] hover:border-[#0094B6] transition duration-300 rounded-md px-3 py-3">
                 <span className="mt-0.5 text-[14px] whitespace-nowrap font-medium leading-normal tracking-[0.14px] font-heebo text-[#7D90B2]">
                   Last 7 days
                 </span>
                 <DownArrow />
               </button>
-              <button className="flex border px-3 py-3 border-[#7D90B2] rounded-md">
+              <button className="flex border px-3 py-3 border-[#7D90B2] hover:border-[#0094B6] transition duration-300 rounded-md">
                 <Download />
                 <span className="ml-2 text-[14px] whitespace-nowrap text-center font-bold leading-normal tracking-[0.14px] font-heebo text-[#7D90B2]">
                   Download as CSV
@@ -43,7 +43,7 @@ export default function Earnings() {
           </div>
           <div className="grid grid-cols-4 grid-rows-1 gap-10 w-11/12 mx-auto ">
             <div className="bg-white rounded-lg shadow-dashboard-items col-span-full row-span-1 sm:col-span-2 md:col-span-2 xl:col-span-1">
-              <div className="p-5 h-full flex items-center justify-center ">
+              <div className="p-10 h-full flex items-center justify-center md:justify-start ">
                 <div className="p-6 rounded-full bg-[#F0FDF0]">
                   <Dollar />
                 </div>
@@ -58,7 +58,7 @@ export default function Earnings() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items col-span-full sm:col-span-2 md:col-span-2 xl:col-span-1">
-              <div className="p-5 h-full flex items-center justify-center ">
+              <div className="p-10 h-full flex items-center justify-center md:justify-start ">
                 <div className="p-6 rounded-full bg-[#FCF1F6]">
                   <Mark />
                 </div>
@@ -73,7 +73,7 @@ export default function Earnings() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items col-span-full sm:col-span-2 md:col-span-2 xl:col-span-1">
-              <div className="p-5 h-full flex items-center justify-center ">
+              <div className="p-10 h-full flex items-center justify-center md:justify-start ">
                 <div className=" p-6 rounded-full bg-[#FFF6F7]">
                   <Person />
                 </div>
@@ -88,7 +88,7 @@ export default function Earnings() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-dashboard-items col-span-full sm:col-span-2 md:col-span-2 xl:col-span-1">
-              <div className="p-5 h-full flex items-center justify-center ">
+              <div className="p-10 h-full flex items-center justify-center md:justify-start ">
                 <div className=" p-6 rounded-full bg-[#F2FAFF]">
                   <Music />
                 </div>
@@ -124,7 +124,7 @@ export default function Earnings() {
                     <li>8. Too late</li>
                   </div>
                   <div className="ml-0 sm:ml-24 flex items-center">
-                    <img src="assets/earnings/chartImage.png" className="w-full h-auto" />
+                    <img src="assets/earnings/chartImage.png" className="w-full h-auto" alt="chart" />
                   </div>
                 </div>
                 <div className=" w-10/12 mx-auto mt-6 pb-6">

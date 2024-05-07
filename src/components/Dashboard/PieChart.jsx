@@ -40,6 +40,7 @@ export default function StreamByCountries() {
             <img
               src="assets/dashboard/circle.png"
               className="shadow-xl rounded-full p-4"
+              alt="piechart"
             />
           </div>
         </div>

@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { DropDown } from "../SvgComponents/SVG";
+import { SalesDropDown } from "../SvgComponents/SVG";
 
 export default function Chart() {
   const data = [
@@ -83,7 +83,7 @@ export default function Chart() {
           <p className="text-right flex items-center font-heebo not-italic text-[12px] font-medium leading-3 text-[#AAACAE]">
             Last Month{" "}
             <span>
-              <DropDown/>
+              <SalesDropDown />
             </span>
           </p>
         </div>

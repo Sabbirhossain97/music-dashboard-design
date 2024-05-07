@@ -47,7 +47,7 @@ export default function Fans() {
             className="flex items-center justify-between w-10/12 mx-auto"
           >
             <div className="flex items-center">
-              <img src={`assets/dashboard/${item.icon}.png`} />
+              <img src={`assets/dashboard/${item.icon}.png`} alt="avatar" />
               <p className="text-[#A6ACBE] ml-4 font-heebo text-[14px] not-italic font-medium leading-normal tracking-[0.14px]">
                 {item.name}
               </p>
